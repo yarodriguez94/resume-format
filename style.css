@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+
+body {
+
+    background-color:blue;
+}
+
+.container {
+
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    padding:1rem;
+}
+
+.container-left {
+
+    width:20%;
+    height: auto;
+    padding: 1em;
+    background-color:black;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+    .info-personal-datos{
+
+        width: 100%;
+        height: 266px;
+        background-color:yellow;
+        border:solid 1px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+    }
+        .info-personal-datos-foto .foto{
+
+            width: 100%;
+            height: 100%;
+            background-color:blueviolet;
+            /*-moz-border-radius: 50%;
+            -webkit-border-radius: 50%;*/
+            border-radius:50%;
+
+
+        }
+            
+
+.container-rigth {
+
+    
+    width:70%;
+    height: auto;
+    padding: 1em;
+    background-color:aqua;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: space-around;
+
+}
+    .info-profesional-datos {
+
+        width: 100%;
+        height: 300px;
+        background-color:blueviolet;
+        border:1px solid;
+
+    }
