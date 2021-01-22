@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing:border-box;
+    list-style: none;
 
 }
 
@@ -27,20 +28,64 @@ body {
     background-color:black;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
 
 }
-    .info-personal-datos{
+    .container-left-info-personal-datos{
 
         width: 100%;
         height: 266px;
         background-color:yellow;
         border:solid 1px;
         display:flex;
-        align-items: center;
-        justify-content: space-between;
-        
+        align-items:flex-start;
+        /*justify-content: space-between;*/
+        padding:1em;
+        font-size:12px;
 
     }
+
+        .info-personal-datos-basicos{
+
+            background-color:gray;
+
+        }
+       
+            .fas::before {
+                display: inline-block;
+                content: 'f2bb';
+                margin-right: 0.8rem;
+                margin-top:0.5rem;
+            }
+
+            #week::before, #status::before{
+
+                display: inline-block;
+                content:' ';
+                margin-right:1.5rem;
+            }
+          
+        .info-personal-datos-licencia {
+
+            
+            background-color:gray;
+            
+
+        }
+
+        .info-personal-datos-competencias{
+
+            background-color:gray;
+
+        }
+        .info-personal-datos-referencias-personales {
+
+            background-color:gray;
+        }
+
+
+           
+
         .info-personal-datos-foto .foto{
 
             width: 100%;
@@ -54,7 +99,7 @@ body {
         }
             
 
-.container-rigth {
+.container-right {
 
     
     width:70%;
@@ -66,7 +111,22 @@ body {
     justify-content: space-around;
 
 }
-    .info-profesional-datos {
+    .container-right-datos-nombreCargo {
+
+        width: 100%;
+        height: 100px;
+        background-color: gray;
+
+    }
+    .container-right-datos-nombreCargo h3{
+
+        /*display: block;*/
+        position: relative;
+        top:30px;
+        background-color:green;
+    }  
+
+    .container-right-info-profesional-datos {
 
         width: 100%;
         height: 300px;
@@ -74,3 +134,8 @@ body {
         border:1px solid;
 
     }
+        .perfil,.academica,.laboral,.concepto {
+
+            padding:1em;
+            
+        }
