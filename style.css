@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing:border-box;
     list-style: none;
+    font-family: 'Assistant', sans-serif;
+    /*font-family: 'Markazi Text', serif;*/
 
 }
 
 
 body {
 
-    background-color:blue;
+   /* padding: 0rem;*/
+    
 }
 
 .container {
@@ -17,7 +20,13 @@ body {
     display:flex;
     flex-flow:row wrap;
     justify-content: center;
-    padding:1rem;
+    padding:0.5rem;
+    border-color:rgba(4, 68, 151);
+    border-width: 0.5em;
+    border-style: inset;
+    border-radius: 80px 20px;
+    /*border:solid 4px  #285fe6;*/
+    
 }
 
 .container-left {
@@ -25,32 +34,43 @@ body {
     width:20%;
     height: auto;
     padding: 1em;
-    background-color:black;
+    /*background-color:black;*/
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+  
+    
 
 }
+    .info-personal-datos-foto,.foto{
+
+        width: 160px;
+        height: 160px;
+        margin:auto;
+        border-radius: 50%;
+    }
     .container-left-info-personal-datos{
 
         width: 100%;
         height: 266px;
-        background-color:yellow;
-        border:solid 1px;
+        border-bottom:solid 1px;
         display:flex;
         align-items:flex-start;
-        /*justify-content: space-between;*/
         padding:1em;
         font-size:12px;
+        
 
     }
+    .container-left-info-personal-datos ul li {
 
-        .info-personal-datos-basicos{
+            
+        
+        display:flex;
+        justify-content: left;
+        align-items: baseline;
+        
 
-            background-color:gray;
-
-        }
-       
+    }
             .fas::before {
                 display: inline-block;
                 content: 'f2bb';
@@ -64,48 +84,13 @@ body {
                 content:' ';
                 margin-right:1.5rem;
             }
-          
-        .info-personal-datos-licencia {
-
-            
-            background-color:gray;
-            
-
-        }
-
-        .info-personal-datos-competencias{
-
-            background-color:gray;
-
-        }
-        .info-personal-datos-referencias-personales {
-
-            background-color:gray;
-        }
-
-
-           
-
-        .info-personal-datos-foto .foto{
-
-            width: 100%;
-            height: 100%;
-            background-color:blueviolet;
-            /*-moz-border-radius: 50%;
-            -webkit-border-radius: 50%;*/
-            border-radius:50%;
-
-
-        }
-            
 
 .container-right {
 
-    
     width:70%;
     height: auto;
     padding: 1em;
-    background-color:aqua;
+   
     display:flex;
     flex-flow:column nowrap;
     justify-content: space-around;
@@ -115,27 +100,173 @@ body {
 
         width: 100%;
         height: 100px;
-        background-color: gray;
+        border-bottom:solid 1px;
 
     }
     .container-right-datos-nombreCargo h3{
 
         /*display: block;*/
-        position: relative;
+       position: relative;
         top:30px;
-        background-color:green;
+        
     }  
 
     .container-right-info-profesional-datos {
 
         width: 100%;
         height: 300px;
-        background-color:blueviolet;
+       
         border:1px solid;
+        
+        /*overflow:scroll;*/
+        
 
     }
-        .perfil,.academica,.laboral,.concepto {
+        .perfil,.academica,.laboral,.concepto{
+            
+            
+            padding:1em;
+            overflow-y:scroll;
+            max-height: 300px;
+            
+
+        }
+     .funcion::before {
+
+        display: inline-block;
+        margin-right: 0.8rem;
+        margin-top:0.5rem;
+        
+
+     }
+
+     .info-profesional-datos-experienciaLaboral p{
+
+        padding: 0.1em;
+
+     }
+
+     .info-profesional-datos-experienciaLaboral ul li  {
+
+        display:flex;
+        text-align:justify;
+        padding: 0.1em;
+     
+    }
+
+   
+
+    @media screen and (max-width:1024px){
+
+        .container{
+
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+        .container-left {
+
+            min-width: 100%;
+            
+        }
+
+          .container-left-info-personal-datos li{
+
+            display: block;
+            margin-bottom: 0.1em;
+            
+
+
+        }
+           
+
+            .info-personal-datos-basicos {
+
+                display: flex;
+                flex-flow: column;
+
+            }
+           
+            .info-personal-datos-foto{
+
+               width: 100%;
+               height: 100%;
+               margin: auto;
+               
+            }
+                .foto{
+
+                    background-color:aqua;
+                    width: 220px;
+                    height: 220px;
+                    border-radius: 50%;
+
+                }
+
+                img {
+
+                    max-width: 100%;
+
+                }
+        .container-right{
+
+            min-width: 100%;
+            
+
+        }
+        .container-right-datos-nombreCargo {
+
+            height:100px;
+            font-size:0.9em;
+                      
+
+
+            
+        }
+        .container-right-datos-nombreCargo h3 {
+
+            top:0;
+
+
+            
+        }
+        .container-right-datos-nombreCargo h1{
+
+            font-size:1.5em;
+
+        }
+
+        .container-right-info-profesional-datos{
+
+            font-size:12px;
+            height: 100;
+
+
+        }
+
+
+    }
+   
+    @media screen and (max-width:360px){
+
+        .info-personal-datos-foto,.foto{
+
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin:auto;
+            
+        }
+    }
+     
+    @media screen and (max-width:1200px) {
+
+        body {
 
             padding:1em;
             
         }
+       
+            
+
+   }
